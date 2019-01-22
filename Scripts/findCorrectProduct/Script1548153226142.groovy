@@ -18,13 +18,13 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl(homeUrl)
+WebUI.navigateToUrl(GlobalVariable.HomeUrl)
 
-WebUI.setText(findTestObject('asadventure/navigation_menu/search_box'), 'Fleece Essential Hoodie')
+WebUI.setText(findTestObject('asadventure/navigation_menu/search_box'), 'Pullover Nordic Wood II')
 
 WebUI.click(findTestObject('asadventure/navigation_menu/button_search'))
 
-WebUI.verifyTextNotPresent(noSearchResultsText, false)
+WebUI.verifyTextNotPresent(GlobalVariable.NoSearchResultsText, false)
 
 WebUI.click(findTestObject('asadventure/search_results_page/filter_gender_btn'))
 
@@ -38,13 +38,13 @@ WebUI.click(findTestObject('asadventure/search_results_page/filter_colour_btn'))
 
 WebUI.waitForElementVisible(findTestObject('asadventure/search_results_page/colour_dropdown'), 1)
 
-WebUI.click(findTestObject('asadventure/search_results_page/label_green'))
+WebUI.click(findTestObject('asadventure/search_results_page/label_grey'))
 
 WebUI.click(findTestObject('asadventure/search_results_page/colour_dropdown_close_btn'))
 
 WebUI.click(findTestObject('asadventure/search_results_page/product_tile'))
 
-WebUI.verifyTextPresent('Fleece Essential Hoody', false)
+WebUI.verifyElementText(findTestObject('asadventure/product_page/product_name'), 'Pullover Nordic Wood II')
 
 WebUI.closeBrowser()
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>addProductBeforeLogin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7fd4c1e9-f754-4c22-80d6-2d5d81a6d903</testCaseGuid>
+   <variable>
+      <defaultValue>'T-Shirt Graphic Set In Neck 2'</defaultValue>
+      <description></description>
+      <id>af0c28c4-8c35-4f56-a37c-e35af4c3b1da</id>
+      <masked>false</masked>
+      <name>productName</name>
+   </variable>
+</TestCaseEntity>

@@ -13,10 +13,30 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
  */
 public class GlobalVariable {
      
+    /**
+     * <p></p>
+     */
+    public static Object HomeUrl
+     
+    /**
+     * <p></p>
+     */
+    public static Object Login
+     
+    /**
+     * <p></p>
+     */
+    public static Object Password
+     
+    /**
+     * <p></p>
+     */
+    public static Object NoSearchResultsText
+     
 
     static {
         def allVariables = [:]        
-        allVariables.put('default', [:])
+        allVariables.put('default', ['HomeUrl' : 'https://www.asadventure.com/en.html', 'Login' : 'test.user21@mailinator.com', 'Password' : 'DSNYktEjpD9MTMA', 'NoSearchResultsText' : 'Your search did not match any products'])
         
         String profileName = RunConfiguration.getExecutionProfile()
         def selectedVariables = allVariables[profileName]
@@ -28,6 +48,10 @@ public class GlobalVariable {
 			}
 		}
 
+        HomeUrl = selectedVariables["HomeUrl"]
+        Login = selectedVariables["Login"]
+        Password = selectedVariables["Password"]
+        NoSearchResultsText = selectedVariables["NoSearchResultsText"]
         
     }
 }
